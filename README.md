@@ -32,3 +32,4 @@ The nuances of "else if, if, and else" are very important.
 Repetitive iteration. Change one thing, test the HTML in-browser, then see what broke or needed modification, or if my added implementation was useful.
 
 ## Screenshot
+https://imgur.com/GZwSSEV

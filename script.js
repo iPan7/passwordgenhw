@@ -25,17 +25,6 @@ function generatePassword() {
   var upperCases = confirm("Do you want uppercases in your password?");
   var special = confirm("Do you want special characters in your password?");
 
-  // // this is a minimum count for numbers, lowerCases, upperCases & specialCharacters
-
-  // var minimumCount = 0;
-
-  // // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
-
-  // var minimumNumbers = "";
-  // var minimumLowerCases = "";
-  // var minimumUpperCases = "";
-  // var minimumSpecialCharacters = "";
-
   // Generator functions**
 
   var functionArray = {
