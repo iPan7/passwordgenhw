@@ -13,22 +13,28 @@ function writePassword() {
 // Prompts that come up after you click generate password
 
 function generatePassword() {
-  var passwordLength = prompt("Please enter the number of characters you want for you new password.  It must be more than 12 but less than 128.");
+
+  var passwordLength = parseInt(prompt("Please enter the number of characters you want for you new password. It must be between 8 and 128 characters long."));
+
+  while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+    passwordLength = parseInt(prompt("Please enter the number of characters you want for you new password. It must be between 8 and 128 characters long."))
+  };
+
   var numbers = confirm("Do you want numbers in your password?");
   var lowerCases = confirm("Do you want lowercases in your password?");
   var upperCases = confirm("Do you want uppercases in your password?");
   var special = confirm("Do you want special characters in your password?");
 
-  // this is a minimum count for numbers, lowerCases, upperCases & specialCharacters
+  // // this is a minimum count for numbers, lowerCases, upperCases & specialCharacters
 
-  var minimumCount = 0;
+  // var minimumCount = 0;
 
-  // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
+  // // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
 
-  var minimumNumbers = "";
-  var minimumLowerCases = "";
-  var minimumUpperCases = "";
-  var minimumSpecialCharacters = "";
+  // var minimumNumbers = "";
+  // var minimumLowerCases = "";
+  // var minimumUpperCases = "";
+  // var minimumSpecialCharacters = "";
 
   // Generator functions**
 
